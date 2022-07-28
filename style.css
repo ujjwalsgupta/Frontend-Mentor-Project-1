@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-size: 18px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+}
+
+/*? Section 1: Navbar */
+
+.navbar {
+  background-color: hsl(0, 0%, 98%);
+  margin: 25px;
+  padding: 0;
+}
+
+.container-fluid {
+  gap: 40px;
+}
+
+.navbar-brand {
+  margin-top: 5px;
+}
+
+.nav-item {
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.nav-link:link,
+.nav-login-link:link,
+.register-button:link,
+.nav-link:visited,
+.nav-login-link:visited,
+.register-button:visited {
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+}
+
+.nav-link:hover,
+.nav-login-link:hover,
+.register-button:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.register-button {
+  font-size: 14px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  padding: 8px 24px;
+  border-radius: 15px;
+  color: hsl(0, 0%, 41%);
+  background-color: hsl(0, 0%, 98%);
+  border: 2px solid hsl(0, 0%, 41%);
+
+  /** My Custom Styles */
+  /* color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%); */
+}
+
+.register-button:hover {
+  color: hsl(0, 0%, 8%);
+  border-color: hsl(0, 0%, 8%);
+
+  /** My Custom Styles */
+  /* border-color: none;
+  background-color: hsl(0, 0%, 98%); */
+}
+
+.register-button {
+  margin-left: 40px;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 0 27px rgb(0, 0, 0, 0.1);
+  margin: 50px 0 0;
+  text-align: center;
+  min-width: 10rem;
+}
+
+.dropdown-menu-2 {
+  min-width: 7rem;
+}
+
+.dropdown-menu[data-bs-popper] {
+  margin-top: 10px;
+}
+
+.dropdown-icon {
+  margin: 0 15px;
+  margin-left: 17px;
+  text-align: left;
+  width: 15px;
+}
+
+.dropdown-item {
+  font-size: 14px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  /* padding: 7px; */
+  text-align: left;
+}
+
+.dropdown-item:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.dropdown-item:active {
+  background-color: #e9ecef;
+  /* background-color: hsl(0, 0%, 41%); */
+  /* background-color: #ead779; */
+}
+
+.dropdown-item-2 {
+  padding-left: 25px;
+  min-width: 7rem;
+}
+
+/*? Section 2: Main Content */
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 11%;
+  margin-bottom: 50px;
+}
+
+.header-div {
+  margin-top: 140px;
+}
+
+.title {
+  font-size: 74px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+  padding-right: 100px;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.description-paragraph {
+  font-size: 18px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  padding-right: 150px;
+  margin-bottom: 30px;
+}
+
+.learn-more-button {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 700;
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%);
+  padding: 12px 28px;
+  margin-bottom: 90px;
+}
+
+.learn-more-button:hover {
+  border-color: none;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.company-logo-container {
+  padding-right: 15%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.side-image {
+  width: 72%;
+  justify-self: end;
+  margin-top: 32px;
+}
+
+/*? Section 3: Footer */
+
+.attribution {
+  font-size: 12px;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  text-align: center;
+}
+
+.attribution-link:link,
+.attribution-link:visited {
+  text-decoration: none;
+  color: hsl(0, 0%, 8%);
+}
+
+.attribution-link:hover,
+.attribution-link:active {
+  font-weight: 600;
+}
